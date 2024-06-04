@@ -1,3 +1,8 @@
+# Color Pallete to try
+
+```css
+/* Rich Blues Palette */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -13,6 +18,7 @@ html, body {
 }
 
 .header, .footer {
+  background: linear-gradient(to right, #08457E, #003153); /* Dark Cerulean to Prussian Blue */
   padding: 1rem;
   text-align: center;
 }
@@ -23,37 +29,15 @@ html, body {
 }
 
 .sidebar {
+  background: linear-gradient(to bottom, #367588, #003153); /* Teal Blue to Prussian Blue */
   padding: 1rem;
   width: 200px;
 }
 
 .main {
+  background: linear-gradient(to top, #0F52BA, #08457E); /* Sapphire Blue to Dark Cerulean */
   padding: 1rem;
   flex: 1;
-}
-
-.fav-items-details {
-  font-size: x-large;
-  margin-bottom: 2rem; /* Add margin bottom to create space between details and cards */
-}
-
-.fav-items-details[open] .card {
-  animation: animateDown 0.2s linear forwards;
-}
-
-.fav-items-summary{
-  padding-bottom: 0.75rem;
-}
-
-@keyframes animateDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .card-list {
@@ -65,7 +49,7 @@ html, body {
 }
 
 .card-list > li {
-  flex: 1 0 21%; 
+  flex: 1 0 21%; /* Adjust the flex-basis as per requirement */
   margin: 1rem;
 }
 
@@ -73,15 +57,15 @@ html, body {
   width: 100%;
   min-height: 16rem;
   border-radius: 30px;
-  box-shadow: 5px 5px 15px rgb(25, 25, 25), -5px -5px 15px rgb(60, 60, 60);
+  background: #003153; /* Prussian Blue */
+  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.5), -15px -15px 30px rgba(60, 60, 60, 0.5);
   overflow: hidden;
   padding: 1rem;
   box-sizing: border-box;
-  border: 2px solid transparent; /* Default border to be replaced by JS */
 }
 
 .card:hover {
-  background: #212121bd;
+  background: #003153bd;
 }
 
 .card img {
@@ -113,7 +97,10 @@ html, body {
     order: 1;
   }
   .card-list > li {
-    flex: 1 0 100%; 
+    flex: 1 0 100%; /* Full width for mobile */
     margin: 0.5rem 0;
   }
 }
+
+
+```

@@ -1,39 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href=".//aaronstyles.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">home</a></li>
-          <li><a href="#socials">socials</a></li>
-        </ul>
-      </nav>
-      <div class="hero">
-        <div class="hero--header">
-          <h1>Welcome to my Page!</h1>
-        </div>
-        <img
-          src="./img/logo.jpg"
-          alt="Hero Logo"
-          class="hero--hero-img"
-        />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aarons Page</title>
+  <link rel="stylesheet" href="aaronstyles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Aaron Echler</h1>
+      <form action="">
+        <h3>Select Theme</h3>
+        <select name="color-options" id="color-options">
+          <option value="dark-theme" selected>Dark Theme</option>
+          <option value="light-theme">Light Theme</option>
+          <option value="blue-theme">Blue Theme</option>
+        </select>
+      </form>
     </header>
-    <main>
-      <section class="welcome-section">
-        <p>Hello my name is Aaron Echler and I am from Cincinnati</p>
-        <button class="favorite-btn">Press Me</button>
-      </section>
-    </main>
+    <div class="content">
+      <nav class="sidebar"></nav>
+      <main class="main">
+        <details class="fav-items-details">
+          <summary class="fav-items-summary">My Favorite Things</summary>
+          <div class="cards-container">
+            <ul class="card-list">
+              <li>
+                <div class="card">
+                  <h2 class="card-title">Music</h2>
+                  <img src="https://pngimg.com/uploads/music_notes/music_notes_PNG5.png" alt="Musical note">
+                  <p class="card-desc">I enjoy music, I enjoy the variety of different genres and creativity in what can
+                    be done.</p>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <h2 class="card-title">Go-Karts</h2>
+                  <img src="https://th.bing.com/th/id/OIP.KQ3aIY5utPu2KB76bmWpVQHaE7?w=261&h=180&c=7&r=0&o=5&pid=1.7"
+                    alt="Go-Karts">
+                  <p class="card-desc">I enjoy Go-Karts! I worked at a Go-Kart track as a marshal for many years and
+                    made many friends.</p>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <h2 class="card-title">Video Games</h2>
+                  <img src="https://th.bing.com/th/id/OIP.o979uwZcEK4LNr71mk2E-AAAAA?rs=1&pid=ImgDetMain"
+                    alt="Video-Games">
+                  <p class="card-desc">I love playing video games. I enjoy roguelike and soulslike games, likely due to
+                    the dopamine release.</p>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <h2 class="card-title">Programming</h2>
+                  <img src="https://beningo-embedded-group.s3.amazonaws.com/2019/10/AdobeStock_116759427.jpeg"
+                    alt="Programming">
+                  <p class="card-desc">I enjoy writing code. I love the ability to create things and always having
+                    something to do.</p>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <h2 class="card-title">Elden Ring</h2>
+                  <img src="https://4news.it/wp-content/uploads/2021/06/Elden-Ring-Header.jpg" alt="Elden-Ring">
+                  <p class="card-desc">I enjoy the setting and combat difficulty of Elden Ring. I love playing as a mage
+                    and yes... I am super excited for the DLC coming out in a few weeks!</p>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <h2 class="card-title">Game of Thrones</h2>
+                  <img src="https://flxt.tmsimg.com/assets/p8553063_b_v13_ay.jpg" alt="Game-of-Thrones">
+                  <p class="card-desc">I love the Game of Thrones HBO series not including season 8 or 7. The audio books have been keeping me sane at my job as well.</p>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <h2 class="card-title">House of the Dragon</h2>
+                  <img src="https://image.tmdb.org/t/p/original/lpdzTdAkspzmvrkKeTJoIjlPh16.jpg" alt="House-of-the-Dragon">
+                  <p class="card-desc">I love House of the Dragon! I am super excited for the first episode coming out in a few weeks. I will be disappointed if season 2 does not open with Matt Smith yelling "it's Dragon Time!" </p>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <h2 class="card-title">My Doggos</h2>
+                  <img src="./img/my-dogs.jpg" alt="doggo">
+                  <p class="card-desc">I love my dog's Jax's who is on the left and Travis who is on the right.  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </details>
+      </main>
+    </div>
     <footer class="footer"></footer>
+  </div>
+  <script src="aaronmain.js"></script>
+</body>
 
-    <script src=".//aaronmain.js"></script>
-  </body>
 </html>
